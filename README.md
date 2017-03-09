@@ -42,14 +42,16 @@ gradle build
 sh download.sh http://get.skype.com/go/getskype
 ```
 
-Note that the CPU usage is significantly higher in Java than using cURL (15-35% vs 0-2% on my computer).
+Note that the CPU usage is significantly higher in Java than using cURL (20-40% vs 0-2% on my computer).
 Experimenting with buffer sizes (1-16 KB) did not yield significant changes in CPU utilization or 
- download time.
+ download time. I also tried another, allegedly more effective strategy using NIO Channels, but to
+ no observable improvement. Perhaps this is as good as it gets in Java? I would certainly appreciate 
+ advice on improvements.
 
 Please note that there is virtually no error checking in this code, so now you're warned! 
 Don't complain to me if you mess this up by typing in anything else than proper URLs ;)
 
 # Future plans
 
-I may have fun at a later time, optimizing the Java code, or trying the same task in other languages, 
+I may have fun at a later time, further optimizing the Java code, or trying the same task in other languages, 
 like JavaScript, Go or Ruby. In that case, I will update this project. 
