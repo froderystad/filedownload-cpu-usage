@@ -7,9 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Downloader {
+    private static final int BUFFER_SIZE = 16*1024; // in bytes, e.g. 1024 is 1 KB buffer
+
     private final URL downloadUrl;
     private final Path localFilename;
-    private static final int BUFFER_SIZE = 1024;
 
     private Downloader(URL downloadUrl, Path localFilename) {
         this.downloadUrl = downloadUrl;
