@@ -19,7 +19,7 @@ echo "Outputting CPU usage for process $pid..."
 while ps -p $pid > /dev/null && end_ms=$($date_alias +%s%3N)
 do
     ps -p $pid -o %cpu | tail -n +2
-    sleep 1
+    sleep 0.2
 done
 
 running_time_ms=$(expr $end_ms - $start_ms)
