@@ -3,7 +3,7 @@
 file_url=$1
 file_name="output.dat"
 
-download_command="java -cp build/libs/java.jar Downloader $file_url $file_name"
+download_command="java -jar build/libs/java.jar $file_url $file_name"
 
 # Run download command in background
 $download_command &
