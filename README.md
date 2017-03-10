@@ -44,9 +44,9 @@ Outputting CPU usage for process 94777...
 Note that the CPU usage stabilizes around 13%. This indicates that downloading a file
 and saving it to disk is not supposed to be CPU intensive on a modern computer.
 
-# My own attempt, using Java
+# My first attempt, using Java
 
-I've done most of my professional programming using Java, so I decided to use it for my own attempt.
+I've done most of my professional programming using Java, so I decided to use it for my first attempt.
 
 I used [Gradle](https://gradle.org) as build system this time, so you'll need that installed. 
 
